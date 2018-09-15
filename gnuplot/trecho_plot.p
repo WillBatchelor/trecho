@@ -1,17 +1,13 @@
-# set terminal pngcairo  transparent enhanced font "arial,10" fontscale 1.0 size 600, 400 
-# set output 'trechodata.png'
-set boxwidth 0.9 absolute
+ set boxwidth 0.75 absolute
 set style fill   solid 1.00 border lt -1
-set key fixed right top vertical Right noreverse noenhanced autotitle nobox
-set style histogram clustered gap 1 title textcolor lt -1
+set key outside right top vertical Left reverse noenhanced autotitle columnhead nobox
+set key invert samplen 4 spacing 1 width 0 height 0 
+set style histogram rowstacked title textcolor lt -1
 set datafile missing '-'
 set style data histograms
 set xtics border in scale 0,0 nomirror rotate by -45  autojustify
 set xtics  norangelimit 
 set xtics   ()
 set title "Productivity Over Time" 
-set yrange [ 0.00 : 10.00 ] noreverse nowriteback
-DEBUG_TERM_HTIC = 119
-DEBUG_TERM_VTIC = 119
-## Last datafile plotted: "trello_data.dat"
-plot 'trello_data.dat' using 6:xtic(1) ti col, '' u 12 ti col, '' u 13 ti col, '' u 14 ti col
+set yrange [ 0 : 10 ] noreverse nowriteback
+plot 'trello_data_hist.dat' u 2, '' u 3, '' u 2:xticlabels(1)
