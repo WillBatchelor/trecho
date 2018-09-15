@@ -9,8 +9,8 @@ set style data histograms
 set xtics border in scale 0,0 nomirror rotate by -45  autojustify
 set xtics  norangelimit 
 set xtics   ()
-set title "US immigration from Northern Europe\nPlot selected data columns as histogram of clustered boxes" 
-set yrange [ 0.00000 : 300000. ] noreverse nowriteback
+set title "Productivity Over Time" 
+set yrange [ 0.00 : 10.00 ] noreverse nowriteback
 DEBUG_TERM_HTIC = 119
 DEBUG_TERM_VTIC = 119
 ## Last datafile plotted: "trello_data.dat"
