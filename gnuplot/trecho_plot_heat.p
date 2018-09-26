@@ -9,8 +9,8 @@ set ztics border in scale 0,0 nomirror norotate  autojustify
 unset cbtics
 set rtics axis in scale 0,0 nomirror norotate  autojustify
 set title "Trello Productivity Heat Map" 
-set xtics norangelimit
-set yrange [ -0030 : 2300 ] noreverse nowriteback
+set xtics [ 09/03/2018 : 09/21/2018 ]
+set yrange [ 0600 : 2300 ] noreverse nowriteback
 set cblabel "Completed Tasks" 
 set cbrange [ 0.00000 : 20.00000 ] noreverse nowriteback
 set palette rgbformulae -7, 2, -7
