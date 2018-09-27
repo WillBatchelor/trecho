@@ -1,12 +1,10 @@
 # filename: trello_data_hist.dat
 
-# X     Y      Z1       Z2
-09/03/2018-09/09/2018  
-09/10/2018-09/16/2018
-Monday     1                        6 
-Tuesday    6                        3
-Wednesday                           1 
-Thursday   5                        2
-Friday                              1
-Saturday
-Sunday     4
+# X                     Key         xkey1   xkey2 
+09/03/2018-09/09/2018 Monday        1       6  
+09/10/2018-09/16/2018 Tuesday       6       3
+                      Wednesday     0       1 
+                      Thursday      5       2
+                      Friday        0       1
+                      Saturday      0       0
+                      Sunday        4       0
