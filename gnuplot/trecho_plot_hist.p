@@ -9,5 +9,5 @@ set xtics border in scale 0,0 nomirror rotate by -45  autojustify
 set xtics  norangelimit 
 set xtics   ()
 set title "Productivity Over Time" 
-set yrange [ 0 : 15 ] noreverse nowriteback
-plot for [COL=3:4] 'trello_data_hist.dat' u 2:xticlabels(1)
+set yrange [ 0 : 20 ] noreverse nowriteback
+plot for [COL=2:8] 'trello_data_hist.dat' u COL:xticlabels(1)
